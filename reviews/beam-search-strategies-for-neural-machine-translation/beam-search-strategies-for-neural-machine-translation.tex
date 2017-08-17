@@ -31,17 +31,17 @@
 
   The paper proposes a more flexible decoder strategy, by pruning the search graph, and reducing the number of candidates with the same partial hypothesis (shared past).
 
+\section{Background}
+  Standard beam search builds a translation from left-to-right and keeps a fixed
+  number (beam) of translation candidates with the highest log-probability at each time step. If an end-of-sequence (EOS) token is encountered, we reduce the beam size by 1 and add the sequence to the candidate list of sequences. When the beam size eventually becomes 0, we evaluate the log-probability of all the sequences weighted by sequence length and pick the translation with the highest log-probability score.
+
 \section{Method}
+  4 separate beam search strategies are proposed. One or more of these can be applied on top of vanilla beam search.
   \begin{itemize}
-    \item 
+    \item Relative threshold pruning
   \end{itemize}
 
 \section{Observations}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-\section{Open Questions}
   \begin{itemize}
     \item 
   \end{itemize}
