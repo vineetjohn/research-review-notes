@@ -19,7 +19,7 @@
 \maketitle
 
 \section{Main Idea}
-  Given sufficient representation capacity, the neurons in a network can disentangle higher level features like sentiment from an otherwise incoherent latent representation. Authors identify a neuron that encapsulations almost all of the sentiment prediction power, the value of which can be tuned to modify the sentiment of generative functions conditioned on the network.
+  Given sufficient representation capacity, the neurons in a network can disentangle higher level features like sentiment from an otherwise incoherent latent representation. Authors identify a neuron that encapsulates almost all of the sentiment attribute of a body of text, the value of which can be tuned to modify the sentiment of generative functions conditioned on the representation.
 
 \section{Method}
   \begin{itemize}
@@ -35,7 +35,7 @@
     \item Outperforms state-of-the art sentiment analysis systems, doesn't perform as well on subjective-objective and opinion polarity tasks. Sets a new baseline for movie reviews in the Stanford Sentiment Treebank.
     \item L1 regularization is known to reduce sample complexity when there are
     many irrelevant features or outliers, since it is less sensitive to them.
-    \item A single unit within the mLSTM directly corresponds to sentiment. The sentiment unit acheives close to state of the art sentiment classification results and is only improved in a minor way by the remaining 4095 units of the mLSTM.
+    \item A single unit within the mLSTM directly corresponds to most of the sentiment classification. The sentiment unit acheives close to state of the art sentiment classification results and the improvement on adding the remaining 4095 units of the mLSTM representation is minor.
     \item Since the model is trained on Amazon reviews, it didn't generalize well to Yelp-style document reviews commenting about hospitality, location and ambience.
     \item The model performs reasonbly well on paraphrase detection, but not on semantic relatedness.
   \end{itemize}
