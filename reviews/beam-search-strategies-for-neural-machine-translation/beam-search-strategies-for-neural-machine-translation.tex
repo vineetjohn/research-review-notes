@@ -38,7 +38,16 @@
 \section{Method}
   4 separate beam search strategies are proposed. One or more of these can be applied on top of vanilla beam search.
   \begin{itemize}
-    \item Relative threshold pruning
+    \item Relative threshold pruning: This eliminates candidates are are beyond a relative distance to the current best candidate.
+    $$score(cand) \leq rp * \max_{c \in C} {score(c)}$$
+    where $rp$ is the pruning threshold.
+    \item Absolute threshold pruning: Almost the same as the previous strategy except that the difference between the best and pruned candidates is determined by an Absolute value $ap$.
+    $$score(cand) \leq \max_{c \in C} {score(c)} - ap$$
+    \item Relative local threshold pruning: This is similar to the first strategy, but instead of considering the log-probability of the entire sequence, only the log-probability of the last generated word instead of the total sequence score.
+    $$score_w(cand) \leq rpl * \max_{c \in C} {score_w(c)}$$
+    \item Maximum candidates per node: This strategy eliminates candidates based on whether too many current candidates share the same predecessor words, in an attempt to diversify the predictions.
+    $$cand_{pred = P} \text{ if} \sum_{c_{pred = P}} 1 > mc$$
+    where $mc$ is the maximum candidate threshold for candidates that share common predecessor words.
   \end{itemize}
 
 \section{Observations}
