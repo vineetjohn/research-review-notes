@@ -33,19 +33,19 @@
 
 \section{Background}
   Standard beam search builds a translation from left-to-right and keeps a fixed
-  number (beam) of translation candidates with the highest log-probability at each time step. If an end-of-sequence (EOS) token is encountered, we reduce the beam-size by 1 and add the sequence to the candidate list of sequences. When the beam-size eventually becomes 0, we evaluate the log-probability of all the sequences weighted by sequence length and pick the translation with the highest log-probability score.
+  number (beam) of translation candidates with the highest log-probability at each time step. If an end-of-sequence (EOS) token is encountered, the beam-size is reduced by 1 and the sequence is added to the candidate list of translations. When the beam-size eventually becomes 0, the log-probability of all the sequences weighted by sequence length is evaluated and the translation with the highest log-probability score is picked.
 
 \section{Ideas}
   4 separate beam search strategies are proposed. One or more of these can be applied on top of vanilla beam search.
   \begin{itemize}
-    \item Relative threshold pruning: This eliminates candidates are are beyond a relative distance to the current best candidate.
+    \item \textbf{Relative threshold pruning:} This eliminates candidates are are beyond a relative distance to the current best candidate.
     $$score(cand) \leq rp * \max_{c \in C} {score(c)}$$
     where $rp$ is the pruning threshold.
-    \item Absolute threshold pruning: Almost the same as the previous strategy except that the difference between the best and pruned candidates is determined by an Absolute value $ap$.
+    \item \textbf{Absolute threshold pruning:} Almost the same as the previous strategy except that the difference between the best and pruned candidates is determined by an absolute value $ap$.
     $$score(cand) \leq \max_{c \in C} {score(c)} - ap$$
-    \item Relative local threshold pruning: This is similar to the first strategy, but instead of considering the log-probability of the entire sequence, only the log-probability of the last generated word instead of the total sequence score.
+    \item \textbf{Relative local threshold pruning:} This is similar to the first strategy, but instead of considering the log-probability of the entire sequence, only the log-probability of the last generated word instead of the total sequence score.
     $$score_w(cand) \leq rpl * \max_{c \in C} {score_w(c)}$$
-    \item Maximum candidates per node: This strategy eliminates candidates based on whether too many current candidates share the same predecessor words, in an attempt to diversify the predictions.
+    \item \textbf{Maximum candidates per node:} This strategy eliminates candidates based on whether too many current candidates share the same predecessor words, in an attempt to diversify the predictions.
     $$cand_{pred = P} \text{ if} \sum_{c_{pred = P}} 1 > mc$$
     where $mc$ is the maximum candidate threshold for candidates that share common predecessor words.
   \end{itemize}
@@ -53,8 +53,7 @@
 \section{Method}
   \begin{itemize}
     \item English $\rightarrow$ German translation done at the sub-word level (reduces the computational complexity of the output softmax). English $\rightarrow$ Chinese translation done at the word level.
-    \item NMT implementation similar to \cite{bahdanau2014neural}.
-    \item Embedding dimension of 620 used, with RNN GRU unit for the latent representation of 1000 units. SGD is the learning algorithm used. Number of epochs not discussed, but a batch-size of 64 is used for training.
+    \item NMT implementation similar to \cite{bahdanau2014neural}. Embedding dimension of 620 used, with RNN GRU unit for the latent representation of 1000 units. SGD is the learning algorithm used. Number of epochs not discussed, but a batch-size of 64 is used for training.
     \item Experiments done to choose the most conservative threshold that doesn't degrade translation accuracy. 
     \item Beam-sizes of 5 to 14 are experimented with.
   \end{itemize}
