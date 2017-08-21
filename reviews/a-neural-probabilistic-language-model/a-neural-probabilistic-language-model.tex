@@ -19,13 +19,13 @@
 \maketitle
 
 \section{Main Idea}
-  This is the seminal paper on neural language modeling that first proposed learning distributed representations of words. There is an obvious distinction made for predictions in a discrete vocabulary space vs. predictions in a continuous space, and the solution proposed is to have real-valued word feature vectors that are learnt along with the joint probability function of their occurrance in sequences in the corpus.
+  This is the seminal paper on neural language modeling that first proposed learning distributed representations of words. There is an obvious distinction made for predictions in a discrete vocabulary space vs. predictions in a continuous space i.e. the curse of dimensionality. The solution proposed is to have real-valued word feature vectors that are learnt along with the joint probability function of their occurrance in sequences in the corpus. \cite{bengio2003neural}
 
 \section{Method}
   \begin{itemize}
     \item The probability function is expressed as the product of the conditional probabilities of the next word given the current word.
     \item In contrast to future works like Word2Vec, this paper considers the next word's probability distribution to be conditioned only on a window of $n$ words that precede it.
-    \item Neural architecture comprises of an embedding layer, a hidden $tanh$ layer and an output $softmax$ layer.
+    \item Neural architecture used for experiments comprised of an embedding layer, a hidden $tanh$ layer and an output $softmax$ layer.
     \item Experiments benchmarked this system on the Brown and AP News corpora and it was compared to n-gram models, with the performance metric being perplexity (lower = better).
   \end{itemize}
 
