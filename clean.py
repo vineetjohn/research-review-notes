@@ -24,7 +24,6 @@ def is_useless_file(filename):
 
 
 def clean_dir(directory_path):
-    # print(directory_path)
     files_to_delete = set()
 
     for root, dirs, files in os.walk(directory_path):
