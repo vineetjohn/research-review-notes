@@ -39,11 +39,15 @@ The paper tries to leverage the success of GANs in the computer vision domain to
         \item No pooling or dropout is used. Regularization is done using batch-normalization layers.
       \end{itemize}
     \item Curriculum Learning: As opposed to the timestep by timestep prediction techniques of the previous 2 methods, curriculum learning is used to predict entire sequences. \cite{bengio2009curriculum}
+    \item Evaluation is done by evaluating generated sentences using a constituency parser to check if the generated data adheres to a context-free grammar's production rules. The true data will also have been produced using this context-free grammar (CFG).
+    \item The paper also suggests conditional generation of language based on a togglable vector (question vs. statement generation; positive vs negative sentiment generation). The method suggested is concatenating a vector of 1s or 0s to the output convolutional layer depending on whether or not the attribute in question is present. The paper doesn't explain how this is acheived with the LSTM based GAN. Presumably, this concatenation can be done on the fixed sized latent vector obtained after the LSTM is run over the input sequence.
+    \item Learning algorithm used are ADAM and SGD. LSTM generator/discriminator learning is smoothed.
   \end{itemize}
 
 \section{Observations}
   \begin{itemize}
-    \item 
+    \item WGAN and WGAN-GP (a variant with a gradient penalty discriminator term to avoid saturation) the only models able to generalize to sequences of length 11 for the LSTM-based GANs. (Tests performed for sequences of length 5 and 11)
+    \item WGAN-GP performed similarly well for the CNN-based GAN.
   \end{itemize}
 
 \bibliographystyle{unsrt}
