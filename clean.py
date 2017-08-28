@@ -43,4 +43,10 @@ def clean_dir(directory_path):
             os.remove(absolute_file_path)
 
 
-clean_dir(sys.argv[1])
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Invalid arguments")
+        print("Usage: clean.py <path>")
+        sys.exit(1)
+    
+    clean_dir(sys.argv[1])
