@@ -23,7 +23,22 @@ The paper tries to leverage the success of GANs in the computer vision domain to
 
 \section{Method}
   \begin{itemize}
-    \item 
+    \item Generative Adversarial Networks \cite{goodfellow2014generative} are comprised of a generator that tries to mimic the original distribution $P(x)$ by sampling from Gaussian noise $P(z)$ using a generator function $G(z)$, and a discriminator that determines whether samples from 2 distributions $P(x)$ and $G(z)$ are genuine or fake. 
+    \item Most language models need to be trained using teacher-forcing, which ensures that the output at the last time-step of the prediction sequences is one of the inputs to the new timestep, which corresponds to MLE training of the model i.e. during training utilize the actual ground-truth of the previous timestep as an additional information signal for the present timestep. The paper also mentions the need to eliminate exposure bias, which is caused when a bad prediction early in the sequence has a cascading effect on the overall quality of the sequence.
+    \item The paper comments on the the lipschitz constraint from the Wasserstein GAN paper \cite{arjovsky2017wasserstein} as an important finding. This constraint restricts the weights of the discriminator network such that they lie in a fixed interval, and that the discriminator is trained multiple times per generator training epoch. This is supposed to protect against allowing the discriminator to easily distinguish between the one-hot vector encoded true-data distribution and the dense real-valued predictions. WGANs are supposed to provide better gradients to the generator because the lipschitz constraint prevents saturation.
+    \item Experiments are performed on both recurrent as well as convolutional models, as well as using curriculum learning
+    \item Recurrent Model:
+      \begin{itemize}
+        \item The model architecture itself doesn't seem novel from the point of view of a typical GAN. Teacher-forcing is used at each time step to condition the output of the current timestep on the ground-truth of the last timestep. The paper notes that in a vanilla RNN, the encoding phase requires the current time step to be conditioned on information from the previous timesteps contained in the hidden state, but this doesn't hold true for the generating (decoding) phase, which is a problem teacher-forcing tries to address.
+        \item There is a slight analogy between teacher-forcing and attention, in that teacher forcing peeks at the ground truth from the previous time-step and attention mechanisms peek at different hidden states from the encoding phase.
+        \item Greedy decoding is performed to predict the next character/word.
+      \end{itemize}
+    \item Convolutional Model:
+      \begin{itemize}
+        \item The convolutional model comprises of 5 residual blocks with 1D convolutional layers. A residual block involves 2 convolutional operations, followed by adding the original input to the output of the $2^{nd}$ convolutional layer.
+        \item No pooling or dropout is used. Regularization is done using batch-normalization layers.
+      \end{itemize}
+    \item Curriculum Learning: As opposed to the timestep by timestep prediction techniques of the previous 2 methods, curriculum learning is used to predict entire sequences. \cite{bengio2009curriculum}
   \end{itemize}
 
 \section{Observations}
