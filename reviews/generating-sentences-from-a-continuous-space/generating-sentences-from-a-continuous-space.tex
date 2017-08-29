@@ -35,11 +35,18 @@
     \item The authors suggest KL-term annealing, which involves having a cost function like
     $$L(\theta; x) = \alpha (-KL(q_{\theta}(z|x)||p(z))) + E_{q_{\theta}(z|x)}[\log p_{\theta}(x|z)]$$ where the value of $\alpha$ is raised from 0 to 1 during the course of the training. This can be thought of as a steady progression from a standard autoencoder to a VAE.
     \item Word-level dropout used to force the decoder to rely primarily on the latent space for the sentence generation.
+    \item A beam search strategy is used by the decoder with beam-size 15.
+    \item Training sequences are read from right to left, to shorten the dependencies.
+    \item An alternative to qualitative evaluation is presented by the usage of an adversarial classifier, which is partially similar to what a GAN does. Non-differentiability of the 
+    \item Model is compared against RNNLMs. \cite{mikolov2011extensions}
   \end{itemize}
 
 \section{Observations}
   \begin{itemize}
-    \item The paper doesn't talk about the presence of dead-zones in the latent space. This should be more of a problem due to the discrete nature of word representation.
+    \item The paper doesn't talk about the presence of dead-zones in the latent space. This should be more of a problem due to the discrete nature of word representation. It also doesn't explain why the reconstruction error doesn't dominate, and only the KL-divergence error dominates. Perhaps several experiments with a fixed KL-divergence factor would be better to arrive at a correct loss-function balance.
+    \item Difficuly to train models for which the KL-divergence term dominates.
+    \item A word-dropout of about 75\% seems to work best from qualitative assessments. (These could very well have been cherry-picked)
+    \item RNNLMs seem to favour very generic sentences, and are less likely to be diverse.
   \end{itemize}
 
 \bibliographystyle{unsrt}
