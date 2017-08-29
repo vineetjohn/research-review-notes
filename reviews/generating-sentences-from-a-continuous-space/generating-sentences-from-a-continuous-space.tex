@@ -21,14 +21,25 @@
 \section{Main Idea}
   The paper presents an alternative strategy to language modeling using RNNs. The authors attempt to use this to impute missing words in a sentence, to interpolate between the latent representations of 2 sentences, and also generate sentences by sampling from the space of the latent representation's prior probability. \cite{bowman2016generating}
 
+\section{Background}
+  \begin{itemize}
+    \item The authors differentiate between types of sentence embeddings. \textbf{Sequence Autoencoders} have RNNs as encoders and decoders are are just used to regenerate the original text. \textbf{Skip-Thought models} are similar but the target sentence is different from the original sentence. \textbf{Paragraph Vector models} simply predict the words that are present in a given sentence.
+    \item Variational autoencoders impose a prior distribution on the latent representation, but a standard autoencoder does not.
+    \item The latent representation is isuualy parametrized by a diagonal Gaussian distribution.
+  \end{itemize}
+
 \section{Method}
   \begin{itemize}
-    \item 
+    \item The prior distribution of the latent representation acts as a regularizer.
+    \item Unclear as to what a 'global latent representation' is. Intuitively, each sentence would have its own representation.
+    \item The authors suggest KL-term annealing, which involves having a cost function like
+    $$L(\theta; x) = \alpha (-KL(q_{\theta}(z|x)||p(z))) + E_{q_{\theta}(z|x)}[\log p_{\theta}(x|z)]$$ where the value of $\alpha$ is raised from 0 to 1 during the course of the training. This can be thought of as a steady progression from a standard autoencoder to a VAE.
+    \item Word-level dropout used to force the decoder to rely primarily on the latent space for the sentence generation.
   \end{itemize}
 
 \section{Observations}
   \begin{itemize}
-    \item 
+    \item The paper doesn't talk about the presence of dead-zones in the latent space. This should be more of a problem due to the discrete nature of word representation.
   \end{itemize}
 
 \bibliographystyle{unsrt}
