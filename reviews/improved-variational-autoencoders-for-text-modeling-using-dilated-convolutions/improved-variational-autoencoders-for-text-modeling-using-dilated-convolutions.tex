@@ -37,7 +37,8 @@
 
 \section{Observations}
   \begin{itemize}
-    \item 
+    \item The large CNN model (LCNN) performed marginally better than the LSTM language model as long as the encoder was pre-trained using the LSTM language model. So, this approach stills requires a pre-trained LSTM language model in-order to outperform it. 
+    \item It could be argued, as the authors do, that the dilated CNN architecture to incorporate a larger context of text helps improve language modelling and text classification performance, as evaluated by negative log-likelihood of the predicted sequences and perplexity.
   \end{itemize}
 
 \bibliographystyle{unsrt}
