@@ -19,7 +19,12 @@
 \maketitle
 
 \section{Main Idea}
-  \cite{zhou2017multi}
+  The general idea \cite{zhou2017multi} seems similar to style-transfer in text. Labeled sequence transduction is just a roundabout way of saying that a source text $x^{(s)}$ is to be transformed into a target text $x^{(t)}$ such that $x^{(t)}$ is conditioned on the labels $y^{(t)}$.
+
+\section{Background}
+\begin{itemize}
+  \item The morphological reinflection problem tries to change a sequence of characters of an inflected word. For example, convert "playing" into "played", given a set of labels $y^{(t)}$ such that $y^{(t)}_{pos}=verb$ and $y^{(t)}_{tense}=past$
+\end{itemize}
 
 \section{Method}
   \begin{itemize}
