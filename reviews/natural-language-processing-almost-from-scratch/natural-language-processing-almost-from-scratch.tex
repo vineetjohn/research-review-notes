@@ -19,7 +19,15 @@
 \maketitle
 
 \section{Main Idea}
-  The paper \cite{collobert2011natural} attempts to train a generic single learning system for multi-task learning. The taks include Part-of-Speech (POS) tagging, chunking, Named Entity Recognition (NER) and Semantic Role Labeling (SRL). The authors intend to acheive this without hand-engineering task-specific features, and instead rely on a large amount on unlabeled data.
+  The paper \cite{collobert2011natural} attempts to train a generic single learning system for multi-task learning. The taks include Part-of-Speech (POS) tagging, chunking (CHUNK), Named Entity Recognition (NER) and Semantic Role Labeling (SRL). The authors intend to acheive this without hand-engineering task-specific features, and instead rely on a large amount on unlabeled data. They also wish to avoid baselines that have been created using differently labeled data.
+  
+\section{Background}
+  \begin{itemize}
+    \item The state-of-the-art (SoTA) system for POS tagging uses bidirectional sequence decoders (Viterbi algorithm) and maximum entropy classifiers to determine, which among a set of pre-defined tags, can be attributed to a token.
+    \item Chunking is essentially the same as POS-tagging, but for phrases instead of single words. SoTA for chunking uses pairwise SVM-classifiers, for which the features were word-contexts. Matrix SVD based methods have also been successfull.
+    \item For NER, the SoTA is a linear model combined with Viterbi decoding, where the features include the tokens themselves, the POS tags, CHUNK tags, suffixes and prefixes.
+    \item SRL is similar to obtaining an entity-relation model from unstructured data (text). SoTA on SRL are pasrse trees, CHUNK and POS tags, voice, types of verb etc. in combination with context-window classifiers.
+  \end{itemize}
 
 \section{Method}
   \begin{itemize}
@@ -28,7 +36,7 @@
 
 \section{Observations}
   \begin{itemize}
-    \item 
+    \item One pertinent question is whether multi-task learning is only effective if the subtasks are not completely orthogonal to each other.
   \end{itemize}
 
 \bibliographystyle{unsrt}
