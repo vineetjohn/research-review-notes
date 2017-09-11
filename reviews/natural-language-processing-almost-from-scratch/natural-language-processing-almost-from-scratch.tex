@@ -31,7 +31,10 @@
 
 \section{Method}
   \begin{itemize}
-    \item 
+    \item The system used by the authors is a simple MLP architecture with minimal pre-processing and no task-specific engineered features.
+    \item The first layer extracts word-level features and the second layer extracts sentence-level features. The architecture uses the equivalent of an embedding/lookup layer that models the language by learning dense representations of words. Sentence level embedding is learnt by using convolutions.
+    \item There could be multiple lookup tables, with the feature vector for a word being the concatenation of all the lookup tables entries.
+    \item For some tasks, the training objective is a multi-class softmax probability and for others, the objective is to collectively maximize the probability of the entire sequence rather that the prediction at each step individually.
   \end{itemize}
 
 \section{Observations}
