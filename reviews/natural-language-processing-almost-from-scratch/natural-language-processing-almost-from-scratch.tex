@@ -19,20 +19,20 @@
 \maketitle
 
 \section{Main Idea}
-  The paper \cite{collobert2011natural} attempts to train a generic single learning system for multi-task learning. The taks include Part-of-Speech (POS) tagging, chunking (CHUNK), Named Entity Recognition (NER) and Semantic Role Labeling (SRL). The authors intend to acheive this without hand-engineering task-specific features, and instead rely on a large amount on unlabeled data. They also wish to avoid baselines that have been created using differently labeled data.
+  The paper \cite{collobert2011natural} attempts to train a generic unified learning system for multi-task learning. The tasks are Part-of-Speech (POS) tagging, chunking (CHUNK), Named Entity Recognition (NER) and Semantic Role Labeling (SRL). The authors intend to achieve this without hand-engineering task-specific features, and instead rely on a large amount on unlabeled data. They also wish to avoid baselines that have been created using differently labeled data.
   
 \section{Background}
   \begin{itemize}
-    \item The state-of-the-art (SoTA) system for POS tagging uses bidirectional sequence decoders (Viterbi algorithm) and maximum entropy classifiers to determine, which among a set of pre-defined tags, can be attributed to a token.
-    \item Chunking is essentially the same as POS-tagging, but for phrases instead of single words. SoTA for chunking uses pairwise SVM-classifiers, for which the features were word-contexts. Matrix SVD based methods have also been successfull.
+    \item The state-of-the-art (SoTA) system for POS tagging uses bidirectional sequence decoders (Viterbi algorithm) and maximum entropy classifiers to determine which among a set of pre-defined tags, can be attributed to a token.
+    \item Chunking is essentially the same as POS-tagging, but for phrases instead of single words. SoTA for chunking uses pairwise SVM-classifiers, for which the features were word-contexts. Matrix SVD based methods have also been successful.
     \item For NER, the SoTA is a linear model combined with Viterbi decoding, where the features include the tokens themselves, the POS tags, CHUNK tags, suffixes and prefixes.
-    \item SRL is similar to obtaining an entity-relation model from unstructured data (text). SoTA on SRL are pasrse trees, CHUNK and POS tags, voice, types of verb etc. in combination with context-window classifiers.
+    \item SRL is similar to obtaining an entity-relation model from unstructured data (text). SoTA on SRL are parse trees, CHUNK and POS tags, voice, types of verb etc. in combination with context-window classifiers.
   \end{itemize}
 
 \section{Method}
   \begin{itemize}
     \item The system used by the authors is a simple MLP architecture with minimal pre-processing and no task-specific engineered features.
-    \item The first layer extracts word-level features and the second layer extracts sentence-level features. The architecture uses the equivalent of an embedding/lookup layer that models the language by learning dense representations of words. Initial embedding layer size was 50 (increased to 500 in later experiments). Vocab size varied from 100k to 130k words. Sentence level embedding is learnt by using convolutions.
+    \item The first layer extracts word-level features and the second layer extracts sentence-level features. The architecture uses the equivalent of an embedding/lookup layer that models the language by learning dense representations of words. Initial embedding layer size was 50 (increased to 500 in later experiments). Vocab size varied from 100k to 130k words. Sentence level embeddings are learnt by using convolutions.
     \item The authors also propose training a small network, and using the trained embeddings to initialize a larger network, as a form of transfer learning.
     \item There could be multiple lookup tables, with the feature vector for a word being the concatenation of all the lookup tables entries.
     \item For some tasks, the training objective is a multi-class softmax probability and for others, the objective is to collectively maximize the probability of the entire sequence rather that the prediction at each step individually.
