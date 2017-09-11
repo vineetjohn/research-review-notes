@@ -42,11 +42,13 @@
     \item Sequence-like decoding for each of the tasks is done using the Viterbi algorithm that uses dynamic programming to maximize the likelihood of entire sequences.
     \item The proposed system eliminates the need of parse-trees for the SRL task. The authors hint at this being a deviation from Chomsky grammars which is hierarchical, and describe this as a Harris grammar which is similar to a set of functions being applied on top of a sequence.
     \item The authors also point to \cite{ando2005framework} as an example of how features from different tasks can be combined into a smaller subspace, and an two objectives could be alternatively trained, one for the meta learner, and one for the task specific learners.
+    \item The authors implemented the neural network from scratch in C, without a symbolic computation framework. This is presumably a very time consuming effort since every backpropagated gradient would have to be hand-computed first, and then coded.
   \end{itemize}
 
 \section{Observations}
   \begin{itemize}
     \item One pertinent question is whether multi-task learning is only effective if the subtasks are not completely orthogonal to each other. This is not evident from the paper's conclusions because a few of the subtasks are dependent on features extracted from the other tasks.
+    \item The network displays consitently good performance across all tasks, sometimes even surpassing the baselines, especially when provided with additional data, and by using transfered embeddings.
   \end{itemize}
 
 \bibliographystyle{unsrt}
