@@ -19,11 +19,11 @@
 \maketitle
 
 \section{Main Idea}
-  The authors formulate this dialogue model as a reinforcement learning problem. The network used is a Generative Adversarial Network. The discrimnator object is the same as a Turing test predictor i.e. classifies whether the dialogue response is human or machine-generated. The goal is to improve to improve the generator to the point where the discrimnator has trouble distinguishing between human and machine-generated responses. \cite{li2017adversarial}.
+  The authors formulate this dialogue model as a reinforcement learning problem. The network used is a Generative Adversarial Network. The discrimnator objective is the same as a Turing test predictor i.e. classifies whether the dialogue response is human or machine-generated. The goal is to improve to improve the generator to the point where the discrimnator has trouble distinguishing between human and machine-generated responses \cite{li2017adversarial}.
 
 \section{Method}
   \begin{itemize}
-    \item The generator network is a neural seq2seq model, and the discrimnator is similar to a Turing test evaluator
+    \item The generator network is a neural seq2seq model, and the discrimnator is similar to a Turing test evaluator.
     \item The generation task is not formulated as a NMT task. Instead, it tries to maximize the likelihood of a response $y = \{y_1, y_2 ... y_T\}$ given a history of previous sentences $x$.
     \item The generator defines the policy by which each word of the output sentence $y$ is generated using a softmax over the space of the vocabulary.
     \item The discrimnator uses a hierarchical neural autoencoder \cite{li2015hierarchical} to generate a vector representation of an entire sequence of conversation i.e. $\{x, y\}$. This vector representation is then fed into a binary classifier which predicts whether the sentences were human- or machine-generated.
@@ -37,7 +37,7 @@
     The Monte-Carlo search strategy was found to be more effective.
     \item Teacher forcing is used to essentially short-circuit the distance between the generator and the true sequence.
     \item The generative model is trained using seq2seq \cite{sutskever2014sequence} and an attention mechanism \cite{bahdanau2014neural}.The discrimnator is also pretrained using part of the training data and generating sequences by beam-search and sampling.
-    \item Intuitively low accuracy of a reasonably well trained discrimnator would imply that the quality of generated sentences have improved significantly.
+    \item Intuitively, low accuracy of a reasonably well trained discrimnator would imply that the quality of generated sentences have improved significantly.
   \end{itemize}
 
 \section{Observations}
