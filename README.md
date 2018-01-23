@@ -15,5 +15,7 @@
 | Multi-space Variational Encoder-Decoders for Semi-supervised Labeled Sequence Transduction | Aug, 2017 | [Paper](https://arxiv.org/abs/1704.01691)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/multispace-variational-encoderdecoders-for-semisupervised-labeled-sequence-transduction.ipynb) | language-generation, generative-adversarial-network |
 | Adversarial Learning for Neural Dialogue Generation | Sep, 2017 | [Paper](https://arxiv.org/abs/1701.06547)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/adversarial-learning-for-neural-dialogue-generation.ipynb) | language-generation, dialogue-generation, generative-adversarial-network |
 | Style Transfer in Text: Exploration and Evaluation | Nov, 2017 | [Paper](https://arxiv.org/abs/1711.06861)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/style-transfer-in-text-exploration-and-evaluation.ipynb) | language-generation, style-transfer |
+| Disentangled Representations for Manipulation of Sentiment in Text | Dec, 2017 | [Paper](https://arxiv.org/abs/1712.10066)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/disentangled-representations-for-manipulation-of-sentiment-in-text.ipynb) | natural-language-generation, sentiment-analysis, controlled-generation |
+
 
 <!-- | paper_title | date | [Paper](paper_link)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/.ipynb) | tags | -->
