@@ -17,6 +17,7 @@
 | Adversarial Learning for Neural Dialogue Generation | Sep, 2017 | [Paper](https://arxiv.org/abs/1701.06547)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/adversarial-learning-for-neural-dialogue-generation.ipynb) | language-generation, dialogue-generation, generative-adversarial-network |
 | Style Transfer in Text: Exploration and Evaluation | Nov, 2017 | [Paper](https://arxiv.org/abs/1711.06861)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/style-transfer-in-text-exploration-and-evaluation.ipynb) | language-generation, style-transfer |
 | Disentangled Representations for Manipulation of Sentiment in Text | Dec, 2017 | [Paper](https://arxiv.org/abs/1712.10066)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/disentangled-representations-for-manipulation-of-sentiment-in-text.ipynb) | natural-language-generation, sentiment-analysis, controlled-generation |
+| Domain Adaptation Meets Disentangled Representation Learning and Style Transfer | Jan, 2018 | [Paper](https://arxiv.org/abs/1712.09025)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer.ipynb) | computer-vision, disentangled-representations |
 
 
 <!-- | paper_title | date | [Paper](paper_link)| [Notes](https://github.com/v1n337/research-review-notes/blob/master/reviews/.ipynb) | tags | -->
