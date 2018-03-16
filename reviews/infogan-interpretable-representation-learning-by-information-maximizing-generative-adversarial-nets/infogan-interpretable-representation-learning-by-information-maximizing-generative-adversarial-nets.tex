@@ -24,7 +24,7 @@
 
   \subsection{Generative Adversarial Networks}
   \begin{itemize}
-    \item Typically, generative models i.e. decoders that are capable of producing a reasonably good approximation for the distribution of the source data, are good indicators of a well-learned representation. eg. GANs\cite{goodfellow2014generative} and VAEs\cite{kingma2013auto}.
+    \item Typically, generative models i.e. decoders that are capable of producing a reasonably good approximation for the distribution of the source data, are good indicators of a well-learned representation. eg. GANs\cite{goodfellow2014generative} and VAEs\cite{{kingma2013auto}}.
     \item This paper builds off the idea of GANs. The min-max game played by the generator and discriminator in GANs is given by the equation $$min_G max_D V(D, G) = \mathbb{E}_{x \sim P_{data}}[\log D(x)] + \mathbb{E}_{z \sim noise} [\log(1 - D(G(z)))]$$
     \item The first term is the expected number of times the discriminator successfully identifies the true data distribution and the second term is the expected number of times the discriminator successfully identifies the data generated from noise sampling. From the perspective of the discriminator, ideally $D(\cdot) = 1$ if the data point is from the true distribution and $D(\cdot) =  0$ if the data point is from the sampled distribution.
   \end{itemize}
