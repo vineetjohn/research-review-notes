@@ -1,0 +1,6 @@
+title: Research Review Notes
+description: Summaries of academic research papers
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-slate
+include: ['_reviews']
