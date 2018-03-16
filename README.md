@@ -2,7 +2,7 @@
 
 | Title | Published | | | Tags |
 |---|---|---|---|---|
-| A Neural Probabilistic Language Model | Feb, 2003 | [Paper](http://www.jmlr.org/papers/v3/bengio03a.html)| [Notes](reviews/a-neural-probabilistic-language-model/a-neural-probabilistic-language-model.pdf) | language-modeling |
+| A Neural Probabilistic Language Model | Feb, 2003 | [Paper](http://www.jmlr.org/papers/v3/bengio03a.html)| [Notes](reviews/a-neural-probabilistic-language-model.md) | language-modeling |
 | Natural Language Processing (almost) from Scratch | Aug, 2011 | [Paper](https://arxiv.org/abs/1103.0398)| [Notes](reviews/natural-language-processing-almost-from-scratch/natural-language-processing-almost-from-scratch.pdf) | unsupervised-learning, tagging, chunking, named-entity-recognition |
 | A Hierarchical Neural Autoencoder for Paragraphs and Documents | Jun, 2015 | [Paper](https://arxiv.org/abs/1506.01057)| [Notes](reviews/a-hierarchical-neural-autoencoder-for-paragraphs-and-documents/a-hierarchical-neural-autoencoder-for-paragraphs-and-documents.pdf) | autoencoder, language-modeling |
 | Generating Sentences from a Continuous Space | Nov, 2015 | [Paper](https://arxiv.org/abs/1511.06349)| [Notes](reviews/generating-sentences-from-a-continuous-space/generating-sentences-from-a-continuous-space.pdf) | language-modeling, recurrent-neural-network |
