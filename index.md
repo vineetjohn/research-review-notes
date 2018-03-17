@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# Research Paper Review Notes
----
-
-
 ```2003-10``` [Paper](http://www.jmlr.org/papers/v3/bengio03a.html) - [Notes](reviews/a-neural-probabilistic-language-model.html) - A Neural Probabilistic Language Model 
 
 ```2011-08``` [Paper](https://arxiv.org/abs/1103.0398) - [Notes](reviews/natural-language-processing-almost-from-scratch.html) - Natural Language Processing almost from Scratch
