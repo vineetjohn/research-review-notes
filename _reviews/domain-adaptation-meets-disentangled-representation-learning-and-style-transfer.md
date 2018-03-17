@@ -49,7 +49,7 @@ distinct handwriting styles, and then:
 
 ## Architecture
 
-![architecture](/images/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer/architecture.png)
+![architecture](../images/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer/architecture.png)
 
 ## Observations
 

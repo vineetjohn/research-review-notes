@@ -32,11 +32,11 @@ The authors aim to disentangle representations of style and content in the laten
 
 ## Architecture
 
-![architecture](/images/toward-controlled-generation-of-text/architecture.png)
+![architecture](../images/toward-controlled-generation-of-text/architecture.png)
 
 ## Learning Process
 
-![learning-process](/images/toward-controlled-generation-of-text/learning-process.png)
+![learning-process](../images/toward-controlled-generation-of-text/learning-process.png)
 
 ## Observations
 * The model performs better than the [S-VAE](http://papers.nips.cc/paper/5352-semi-supervised-learning-with-deep-generative-models) implementation in terms of sentiment accuracy of generated sentences.

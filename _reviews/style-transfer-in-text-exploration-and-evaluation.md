@@ -60,7 +60,7 @@ content preservation.
 
 ## Architecture
 
-![architecture](/images/style-transfer-in-text-exploration-and-evaluation/architecture.png)
+![architecture](../images/style-transfer-in-text-exploration-and-evaluation/architecture.png)
 
 ## Observations
 

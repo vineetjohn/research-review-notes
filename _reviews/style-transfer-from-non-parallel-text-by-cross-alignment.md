@@ -105,7 +105,7 @@ $$\mathcal{L} = \operatorname*{min}_{E,G} \operatorname*{max}_{D} \mathcal{L} - 
 
 ### Learning Process
 
-![image](/images/style-transfer-from-non-parallel-text-by-cross-alignment/cross-alignment-training.png)
+![cross-alignment-training](../images/style-transfer-from-non-parallel-text-by-cross-alignment/cross-alignment-training.png)
 
 ### Experiment Setup
 
