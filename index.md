@@ -8,6 +8,7 @@ layout: default
 |---|---|---|---|---|
 | A Neural Probabilistic Language Model | Feb, 2003 | [Paper](http://www.jmlr.org/papers/v3/bengio03a.html)| [Notes](reviews/a-neural-probabilistic-language-model.html) | language-modeling |
 | Natural Language Processing (almost) from Scratch | Aug, 2011 | [Paper](https://arxiv.org/abs/1103.0398)| [Notes](reviews/natural-language-processing-almost-from-scratch.html) | unsupervised-learning, tagging, chunking, named-entity-recognition |
+| Semi-Supervised Learning with Deep Generative Models | Oct, 2014 | [Paper](https://arxiv.org/abs/1406.5298)| [Notes](reviews/semi-supervised-learning-with-deep-generative-models.html) | language-generation, variational-inference |
 | A Hierarchical Neural Autoencoder for Paragraphs and Documents | Jun, 2015 | [Paper](https://arxiv.org/abs/1506.01057)| [Notes](reviews/a-hierarchical-neural-autoencoder-for-paragraphs-and-documents.html) | autoencoder, language-modeling |
 | Generating Sentences from a Continuous Space | Nov, 2015 | [Paper](https://arxiv.org/abs/1511.06349)| [Notes](reviews/generating-sentences-from-a-continuous-space.html) | language-modeling, recurrent-neural-network |
 | InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets | Jun, 2016 | [Paper](https://arxiv.org/abs/1606.03657)| [Notes](reviews/infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.html) | computer-vision, disentangled-representations | 

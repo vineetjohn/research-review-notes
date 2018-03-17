@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: "reviews/a-neural-probabilistic-language-model.html"
-title: A Neural Probabilistic Language Model
+title: 'A Neural Probabilistic Language Model'
 ---
 
 # A Neural Probabilistic Language Model

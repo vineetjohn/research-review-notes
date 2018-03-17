@@ -4,3 +4,5 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
 include: ['_reviews']
+github:
+  is_project_page: True
