@@ -35,7 +35,7 @@ $q_{\phi}(z,y\|x)$ can be treated as a continuous-discrete mixture model, since 
 * Evaluated on MNIST
 * AdaGrad was the learning algorithm used.
 
-## Architecture
+### Architecture
 ![architecture](../images/semi-supervised-learning-with-deep-generative-models/architecture.png)
 
 

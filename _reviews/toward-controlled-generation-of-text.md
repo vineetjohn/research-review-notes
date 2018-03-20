@@ -30,11 +30,11 @@ The authors aim to disentangle representations of style and content in the laten
 * The model was applied only to short sentences with length $<15$ words.
 * The encoder/decoder setup is implemented using single layer LSTMs and the discriminator is implemented using conv-net. The KL term is annealed from 0 to 1 during training.
 
-## Architecture
+### Architecture
 
 ![architecture](../images/toward-controlled-generation-of-text/architecture.png)
 
-## Learning Process
+### Learning Process
 
 ![learning-process](../images/toward-controlled-generation-of-text/learning-process.png)
 

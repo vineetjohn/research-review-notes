@@ -47,7 +47,7 @@ distinct handwriting styles, and then:
     both try to predict which among the real source image and the
     style-transferred image is the real deal.
 
-## Architecture
+### Architecture
 
 ![architecture](../images/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer/architecture.png)
 

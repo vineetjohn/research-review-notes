@@ -58,9 +58,10 @@ content preservation.
     -   Content preservation is evaluated by computing the cosine
         distance between the original and the generated text embeddings.
 
-## Architecture
+### Architecture
 
 ![architecture](../images/style-transfer-in-text-exploration-and-evaluation/architecture.png)
+
 
 ## Observations
 
