@@ -44,4 +44,6 @@ layout: default
 
 ```2017-12``` [Paper](https://arxiv.org/abs/1712.10066) - [Notes](reviews/disentangled-representations-for-manipulation-of-sentiment-in-text.html) - Disentangled Representations for Manipulation of Sentiment in Text
 
+```2017-12``` [Paper](https://arxiv.org/abs/1711.09395) - [Notes](reviews/improved-neural-text-attribute-transfer-with-non-parallel-data.html) - Improved Neural Text Attribute Transfer with Non-parallel Data
+
 ```2018-01``` [Paper](https://arxiv.org/abs/1712.09025) - [Notes](reviews/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer.html) - Domain Adaptation Meets Disentangled Representation Learning and Style Transfer
