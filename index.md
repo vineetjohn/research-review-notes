@@ -28,6 +28,8 @@ layout: default
 
 ```2017-06``` [Paper](https://arxiv.org/abs/1705.10929) - [Notes](reviews/adversarial-generation-of-natural-language.html) - Adversarial Generation of Natural Language
 
+```2017-06``` [Paper](https://arxiv.org/abs/1706.04223) - [Notes](reviews/adversarially-regularized-autoencoders.html) - Adversarially Regularized Autoencoders
+
 ```2017-06``` [Paper](https://arxiv.org/abs/1706.00409) - [Notes](reviews/fader-networks-manipulating-images-by-sliding-attributes.html) - Fader Networks: Manipulating Images by Sliding Attributes
 
 ```2017-07``` [Paper](https://arxiv.org/abs/1703.00955) - [Notes](reviews/toward-controlled-generation-of-text.html) - Toward Controlled Generation of Text
