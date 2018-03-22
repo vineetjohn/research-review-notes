@@ -40,6 +40,8 @@ layout: default
 
 ```2017-09``` [Paper](https://arxiv.org/abs/1701.06547) - [Notes](reviews/adversarial-learning-for-neural-dialogue-generation.html) - Adversarial Learning for Neural Dialogue Generation
 
+```2017-10``` [Paper](https://arxiv.org/abs/1711.00043) - [Notes](reviews/unsupervised-machine-translation-using-monolingual-corpora-only.html) - Unsupervised Machine Translation Using Monolingual Corpora Only
+
 ```2017-11``` [Paper](https://arxiv.org/abs/1711.06861) - [Notes](reviews/style-transfer-in-text-exploration-and-evaluation.html) - Style Transfer in Text: Exploration and Evaluation
 
 ```2017-12``` [Paper](https://arxiv.org/abs/1712.10066) - [Notes](reviews/disentangled-representations-for-manipulation-of-sentiment-in-text.html) - Disentangled Representations for Manipulation of Sentiment in Text
@@ -47,3 +49,6 @@ layout: default
 ```2017-12``` [Paper](https://arxiv.org/abs/1711.09395) - [Notes](reviews/improved-neural-text-attribute-transfer-with-non-parallel-data.html) - Improved Neural Text Attribute Transfer with Non-parallel Data
 
 ```2018-01``` [Paper](https://arxiv.org/abs/1712.09025) - [Notes](reviews/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer.html) - Domain Adaptation Meets Disentangled Representation Learning and Style Transfer
+
+
+<!-- ```2018-01``` [Paper]() - [Notes]() -  -->
