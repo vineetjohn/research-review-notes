@@ -50,5 +50,6 @@ layout: default
 
 ```2018-01``` [Paper](https://arxiv.org/abs/1712.09025) - [Notes](reviews/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer.html) - Domain Adaptation Meets Disentangled Representation Learning and Style Transfer
 
+```2018-01``` [Paper](https://arxiv.org/abs/1801.06024) - [Notes](reviews/natural-language-multitasking-analyzing-and-improving-syntactic-saliency-of-hidden-representations.html) - Natural Language Multitasking: Analyzing and Improving Syntactic Saliency of Hidden Representations
 
 <!-- ```2018-01``` [Paper]() - [Notes]() -  -->
