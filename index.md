@@ -26,6 +26,8 @@ layout: default
 
 ```2017-06``` [Paper](https://arxiv.org/abs/1706.02262) - [Notes](reviews/infovae-information-maximizing-variational-autoencoders.html) - InfoVAE: Information Maximizing Variational Autoencoders
 
+```2018-01``` [Paper](http://proceedings.mlr.press/v70/mueller17a.html) - [Notes](reviews/sequence-to-better-sequence-continuous-revision-of-combinatorial-structures.html) - Sequence to Better Sequence: Continuous Revision of Combinatorial Structures
+
 ```2017-06``` [Paper](https://arxiv.org/abs/1705.10929) - [Notes](reviews/adversarial-generation-of-natural-language.html) - Adversarial Generation of Natural Language
 
 ```2017-06``` [Paper](https://arxiv.org/abs/1706.04223) - [Notes](reviews/adversarially-regularized-autoencoders.html) - Adversarially Regularized Autoencoders
