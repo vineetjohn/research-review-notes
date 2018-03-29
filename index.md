@@ -50,6 +50,8 @@ layout: default
 
 ```2017-12``` [Paper](https://arxiv.org/abs/1711.09395) - [Notes](reviews/improved-neural-text-attribute-transfer-with-non-parallel-data.html) - Improved Neural Text Attribute Transfer with Non-parallel Data
 
+```2017-12``` [Paper](https://arxiv.org/abs/1711.09163) - [Notes](reviews/jade-joint-autoencoders-for-disentanglement.html) - JADE: Joint Autoencoders for Dis-Entanglement 
+
 ```2018-01``` [Paper](https://arxiv.org/abs/1712.09025) - [Notes](reviews/domain-adaptation-meets-disentangled-representation-learning-and-style-transfer.html) - Domain Adaptation Meets Disentangled Representation Learning and Style Transfer
 
 ```2018-01``` [Paper](https://arxiv.org/abs/1801.06024) - [Notes](reviews/natural-language-multitasking-analyzing-and-improving-syntactic-saliency-of-hidden-representations.html) - Natural Language Multitasking: Analyzing and Improving Syntactic Saliency of Hidden Representations
