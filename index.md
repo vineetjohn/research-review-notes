@@ -44,6 +44,8 @@ layout: default
 
 ```2017-09``` [Paper](https://arxiv.org/abs/1709.08878) - [Notes](reviews/generating-sentences-by-editing-prototypes.html) - Generating Sentences by Editing Prototypes
 
+```2017-10``` [Paper](https://arxiv.org/abs/1710.04087) - [Notes](reviews/word-translation-without-parallel-data.html) - Word Translation Without Parallel Data 
+
 ```2017-10``` [Paper](https://arxiv.org/abs/1711.00043) - [Notes](reviews/unsupervised-machine-translation-using-monolingual-corpora-only.html) - Unsupervised Machine Translation Using Monolingual Corpora Only
 
 ```2017-11``` [Paper](https://arxiv.org/abs/1711.06861) - [Notes](reviews/style-transfer-in-text-exploration-and-evaluation.html) - Style Transfer in Text: Exploration and Evaluation
