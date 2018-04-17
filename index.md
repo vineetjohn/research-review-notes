@@ -12,6 +12,8 @@ layout: default
 
 ```2015-11``` [Paper](https://arxiv.org/abs/1511.06349) - [Notes](reviews/generating-sentences-from-a-continuous-space.html) - Generating Sentences from a Continuous Space
 
+```2016-06``` [Paper](https://arxiv.org/abs/1606.03498) - [Notes](reviews/improved-techniques-for-training-gans.html) - Improved Techniques for Training GANs
+
 ```2016-06``` [Paper](https://arxiv.org/abs/1606.03657) - [Notes](reviews/infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.html) - InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets
 
 ```2016-06``` [Paper](https://www.semanticscholar.org/paper/Controlling-Politeness-in-Neural-Machine-Translati-Sennrich-Haddow/3b82ea4468c9b46ea74ef197d58b289bca835995) - [Notes](reviews/controlling-politeness-in-neural-machine-translation-via-side-constraints.html) - Controlling Politeness in Neural Machine Translation via Side Constraints
