@@ -62,4 +62,6 @@ layout: default
 
 ```2018-01``` [Paper](https://arxiv.org/abs/1801.06024) - [Notes](reviews/natural-language-multitasking-analyzing-and-improving-syntactic-saliency-of-hidden-representations.html) - Natural Language Multitasking: Analyzing and Improving Syntactic Saliency of Hidden Representations
 
+```2018-04``` [Paper](https://arxiv.org/abs/1804.09000) - [Notes](reviews/style-transfer-through-back-translation.html) - Style Transfer Through Back-Translation
+
 <!-- ```2018-01``` [Paper]() - [Notes]() -  -->
