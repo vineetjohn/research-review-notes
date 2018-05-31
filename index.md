@@ -52,7 +52,7 @@ layout: default
 
 ```2017-11``` [Paper](https://arxiv.org/abs/1711.06861) - [Notes](reviews/style-transfer-in-text-exploration-and-evaluation.html) - Style Transfer in Text: Exploration and Evaluation
 
-```2018-01``` [Paper](https://arxiv.org/abs/1711.01558) - [Notes](reviews/wasserstein-autoencoders.html) - Wasserstein Auto-Encoders 
+```2017-11``` [Paper](https://arxiv.org/abs/1711.01558) - [Notes](reviews/wasserstein-autoencoders.html) - Wasserstein Auto-Encoders 
 
 ```2017-12``` [Paper](https://arxiv.org/abs/1712.10066) - [Notes](reviews/disentangled-representations-for-manipulation-of-sentiment-in-text.html) - Disentangled Representations for Manipulation of Sentiment in Text
 
