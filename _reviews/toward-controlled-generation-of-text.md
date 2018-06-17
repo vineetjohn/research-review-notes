@@ -9,7 +9,7 @@ title: Toward Controlled Generation of Text
 
 ## Idea
 
-The authors aim to disentangle representations of style and content in the latent code of an Adversarial Variational AutoEncoder. The style is called the **structured code** and is learned by discriminators for each attribute that needs to be disentangled from the latent space.
+The authors aim to disentangle representations of style and content in the latent code of a Variational AutoEncoder. The style is called the **structured code** and is learned by discriminators for each attribute that needs to be disentangled from the latent space.
 
 ## Method
 * This method does not use adversarial training.
