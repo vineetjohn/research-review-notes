@@ -9,7 +9,7 @@ title: 'Generating Sentences by Editing Prototypes'
 
 ## Idea
 
-The authors propose a prototype-then-edit model that involves modifying a source sentence by attending to the source sequence with a randomly sampled attention vector.
+The authors propose a prototype-then-edit model that involves modifying a source sentence by attending to a random prototype from the source sequences and conditioning generation on a randomly sampled edit vector.
 
 ## Method
 
