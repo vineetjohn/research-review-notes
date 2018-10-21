@@ -68,6 +68,8 @@ layout: default
 
 `2018-04` - [Paper](https://arxiv.org/abs/1804.09000) - [Notes](reviews/style-transfer-through-back-translation.html) - Style Transfer Through Back-Translation
 
-`2018-06` - [Paper](https://arxiv.org/abs/1806.01483) - [Notes](reviews/jtav-jointly-learning-social-media-content-representation-by-fusing-textual-acoustic-and-visual-features.md) - JTAV: Jointly Learning Social Media Content Representation by Fusing Textual, Acoustic, and Visual Features
+`2018-06` - [Paper](https://arxiv.org/abs/1806.01483) - [Notes](reviews/jtav-jointly-learning-social-media-content-representation-by-fusing-textual-acoustic-and-visual-features.html) - JTAV: Jointly Learning Social Media Content Representation by Fusing Textual, Acoustic, and Visual Features
 
-<!-- `201x-0x` - [Paper]() - [Notes](reviews/) - -->
+`2018-08` - [Paper](https://arxiv.org/abs/1706.07639) - [Notes](reviews/causal-embeddings-for-recommendation.html) - Causal Embeddings for Recommendation
+
+<!-- `201x-0x` - [Paper]() - [Notes](reviews/.html) - -->
