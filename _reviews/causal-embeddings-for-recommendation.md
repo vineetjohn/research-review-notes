@@ -18,7 +18,8 @@ Previous approaches to item recommendations are broadly classified into 2 catego
 2. User-item sequence embeddings, which tries to predict the next item which the user intends to purchase.
 
 ## Method
-
+* The authors attempt to jointly factorize the matrix of control observations and the matrix of treatment observations.
+* They utilize an algorithm the call the 'CausE' algorithm, that generates the recommendations.
 
 ## Observations
-
+* The proposed algorithms outperformed the baselines compared against for the MovieLens and Netflix datasets.
